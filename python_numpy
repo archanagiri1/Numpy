@@ -1,0 +1,80 @@
+import numpy as np
+
+print("NumPy working")
+
+
+# 1.creating arrays
+
+list1= [1,2,3,4]
+print(list1)
+
+arr_list1=np.array(list1)
+print(arr_list1)
+
+print(type(arr_list1))
+
+
+list1=[1,2,3]
+list2=[4,5,6]
+arr_list1_2=np.array([list1,list2])
+print(arr_list1_2)
+
+
+list1=[1,2,3]
+list2=[4,5,6]
+list3=[7,8,9]
+arr_list1_3=np.array([[list1,list2,list3]])
+print(arr_list1_3)
+
+print(arr_list1_3.ndim)
+
+# 2.numpy array attributes
+
+arr1=np.array([[1,2,3],[4,5,6]])
+print(arr1)
+
+print("shape:",arr1.shape)
+print("size:",arr1.size)
+print("dtype:",arr1.dtype)
+print("n_dim:",arr1.ndim)
+
+
+# 3.array initialization methods
+
+# zero array
+zero_arr = np.zeros((2,3))
+print(zero_arr)
+
+
+# one array
+one_arr = np.ones((2,3))
+print(one_arr)
+
+
+# full array
+full_arr = np.full((2,3), 7)
+print(full_arr)
+
+# identity matrix
+id_arr = np.eye(3)
+print(id_arr)
+
+# empty array
+print(np.empty(2))
+
+# evenly spaced array
+print(np.arange(1,3,1))
+
+# specific values between in a range
+print(np.linspace(1,10,5))
+
+
+# random values array-float
+r_arr = np.random.rand(3,2)
+print(r_arr)
+
+# random values array-int
+rint_arr=np.random.randint(1,10,(3,3))
+print(rint_arr)
+
+
