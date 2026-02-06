@@ -1,0 +1,12 @@
+import numpy as np
+
+arr1 = np.array([[1,2,3], [4,5,6]])
+print(arr1)
+
+# Attributes of Array (properties of array)
+print("Shape", arr1.shape)  # share= rows, columns and height of array
+print("Size", arr1.size)    # number of elements in array
+print("dType", arr1.dtype)  # data type of elements in array
+print("n_dim", arr1.ndim)   # dimension of array
+
+
