@@ -1,0 +1,20 @@
+# Reshape Array: changing its dimensions (e.g., rows and columns) without altering the actual data
+# Flatten Array: transforming a multi-dimensional array into a single-dimensional array
+
+
+
+
+import numpy as np
+
+arr1 = np.array([1,2,3,4,5,6])      # shape = (1,6) - 1 row and 6 columns
+print(arr1)
+
+reshaped = arr1.reshape((6,1))      # shape = (6,1) - 6 rows and 1 column
+print(reshaped)
+
+reshaped2 = arr1.reshape((2,3))     # re-shaped array from (1,6) to (2,3)
+print(reshaped2)
+
+print(reshaped2.flatten())          # flattened array from higher (2D) dimensional (2,3) to (1,6) (1D)
+
+
