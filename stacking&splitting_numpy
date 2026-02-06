@@ -1,0 +1,50 @@
+# Array Stacking:  combining multiple arrays along a new axis, resulting in an array with a higher dimension than the input arrays
+# Array Splitting:
+
+
+import numpy as np
+
+
+# stacking
+a = np.array([1,2,3])
+b = np.array([4,5,6])
+
+print(np.vstack((a,b))) # vertical stacking - row wise          -> output array is 2D
+print(np.hstack((a,b))) # horizontal stacking - column wise     -> output array is 1D
+
+
+# splitting
+c = np.array([[1,2,3], [4,5,6]])
+print(c)
+
+hsplit = np.hsplit(c,3) # horizontal split -> input and output array are same dimention
+
+for s in hsplit:
+    print(s)
+
+
+vsplit = np.vsplit(c,2) # vertical split -> input and output array are same dimention
+
+for s in vsplit:
+    print(s)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
