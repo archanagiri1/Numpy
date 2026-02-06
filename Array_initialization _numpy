@@ -1,0 +1,45 @@
+import numpy as np
+
+# zeros array : all elements are 0
+
+zero_arr = np.zeros((2,3))
+print(zero_arr)
+
+# ones array : all elements are 1
+
+one_arr = np.ones((1,3))
+print(one_arr)
+
+
+# Full array : all elements are same based on given value
+
+full_arr = np.full((3,2), 9)
+print(full_arr)
+
+
+# Identity Matrix : diagonal elements are ones and all other elements are zeros
+
+id_arr = np.eye(3)
+print(id_arr)
+
+# empty array
+print(np.empty(2))
+
+
+# evenly spaced array : elements are evenly spaced based on step value
+print(np.arange(2,10,2))
+
+
+# specific number of eqaully spaced values between a range : elements are equally spaced based on step value
+print(np.linspace(1,10,4))
+
+
+# random values array - float
+r_arr = np.random.rand(3,2)
+print(r_arr)
+
+
+
+# random values array - int
+rint_arr = np.random.randint(1,100,(3,3))
+print(rint_arr)
