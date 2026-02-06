@@ -1,0 +1,7 @@
+# Installation
+# pip install numpy
+
+# Import
+import numpy as np
+
+print(np.__version__) # Numpy version installed in the system
