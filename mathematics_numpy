@@ -1,0 +1,52 @@
+import numpy as np
+
+
+# a=np.array([10,30,40,70])
+# print(a)
+
+# print(a+10)
+# print(a*3)
+# print(a-7)
+# print(a/2)
+
+
+# a=np.array([1,2,3])
+# b=np.array([4,5,6])
+
+# Element-wise operations
+# print(a+b)
+# print(a*b)
+# print(a**b)
+
+# Scalar operations
+# print(a+10)
+# print(a*2)
+
+# c=np.array([4,5,6])
+# print(c)
+
+# print(np.square(c))
+# print(np.sqrt(c))
+
+a=np.array([1,2,3])
+b=np.array([4,5,6,])
+# print(a)
+# print(b)
+
+
+print(np.add(a,b))
+print(np.multiply(a,b))
+print(np.subtract(a,b))
+print(np.divide(a,b))
+
+
+# Dot product: computes the inner product of the two vectors and sum the results
+print(np.dot(a,b)) # dot product
+
+print(a.T) # Transpose: Returns an array with axes transposed
+
+t = np.array([[1,2,3],
+              [4,5,6]])
+
+print(t)    # initial shape: 2,3
+print(t.T)  # shape after transpose: 3,2
