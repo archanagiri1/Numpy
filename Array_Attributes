@@ -10,3 +10,5 @@ print("dType", arr1.dtype)  # data type of elements in array
 print("n_dim", arr1.ndim)   # dimension of array
 
 
+
+
