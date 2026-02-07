@@ -1,0 +1,21 @@
+# Broadcasting: is a mechanism that allows arithmetic operations to be performed on arrays of different shapes and sizes,
+# it eliminates the need for explicit loops or reshaping operations, making code more concise, readable and efficient.
+
+# Broadcasting Rules:
+    # Compare shapes from right to left.
+    # Dimensions must match or be 1.
+    # If one array has fewer dimensions, pad its shape on the left with 1s.
+    # Any dimension equal to 1 can stretch to match the other array.
+
+
+import numpy as np
+
+
+a = np.array([1,2,3,4])
+b = np.array([5])
+print(a+b)      # adding 1D with 0ne-element array to 1D with multi-element array
+
+
+c = np.array([[1,2,3], [4,5,6]])
+d = np.array([10,20,30])
+print(c+d)      # adding 2D with 6-element array (2,3) to 1D with 6-element array
