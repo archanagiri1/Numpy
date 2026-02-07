@@ -1,0 +1,12 @@
+import numpy as np
+
+
+data1 =  np.array([1,2, np.nan, 4, np.inf])
+print(data1)
+
+print(np.isnan(data1))  # check null value and returns boolean value
+
+print(np.nan_to_num(data1))    # replace non-finite values within an array with specified finite numbers
+
+
+
